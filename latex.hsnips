@@ -91,6 +91,10 @@ snippet ZP "Positive Integers" wA
 \mathbb{Z}^{+}
 endsnippet
 
+snippet NN "Naturals" wA
+\mathbb{N}
+endsnippet
+
 snippet sbs "Subset equal" wA
 \subseteq 
 endsnippet
