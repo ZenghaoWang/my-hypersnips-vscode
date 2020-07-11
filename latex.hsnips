@@ -1,11 +1,28 @@
-snippet beg "begin{} / end{}" A
+snippet `^beg ` "begin{} / end{}" A
 \begin{$1}
 	$0
 \end{$1}
 endsnippet
 
-snippet box "Box" A
-``rv = '┌' + '─'.repeat(t[0].length + 2) + '┐'``
-│ $1 │
-``rv = '└' + '─'.repeat(t[0].length + 2) + '┘'``
+snippet mk "Inline math mode" wA
+\($1\)``
+if (t[1] && [',', '.', '?', '-', ' '].includes(t[1].charAt(0))) {
+    rv = ''
+    }
+else {
+    rv = ' '
+    }
+``$2
 endsnippet
+
+snippet dm "Display math" wA
+\[
+$1
+.\] 
+$0
+endsnippet
+
+
+
+
+
