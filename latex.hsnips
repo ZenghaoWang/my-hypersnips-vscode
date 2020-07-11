@@ -1,7 +1,17 @@
-snippet `^beg ` "begin{} / end{}" A
+snippet `^beg` "begin{} / end{}" A
 \begin{$1}
 	$0
 \end{$1}
+endsnippet
+
+snippet `^sec` "Begin Section" A
+\section{$1}
+$0
+endsnippet
+
+snippet `^subs` "Begin Subsection" A
+\subsection{$1}
+$0
 endsnippet
 
 snippet mk "Inline math mode" wA
@@ -21,6 +31,12 @@ $1
 .\] 
 $0
 endsnippet
+
+snippet usepackage "/usepackage{}" 
+\usepackage$2{$1}
+$0
+endsnippet
+
 
 
 
