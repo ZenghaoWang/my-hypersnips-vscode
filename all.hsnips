@@ -1,4 +1,0 @@
-snippet hsnip "New snippet" 
-snippet ${1:name} ${2:description} ${3:flags}
-${0:body}
-endsnippet

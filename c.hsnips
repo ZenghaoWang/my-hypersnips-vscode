@@ -1,0 +1,22 @@
+snippet null "NULL" wA
+NULL
+endsnippet
+
+snippet ret "Return" w
+return $0
+endsnippet
+
+snippet `^func` "New function" A
+/**
+``
+let param_arr = t[3].split(", ")
+param_arr = param_arr
+    .map(x => x.split(" ")[1])
+rv = param_arr.map(x => "* @param " + x + "\n").join("")
+``
+* @return       $4
+*/
+$1 $2($3) {
+    $0
+}
+endsnippet
