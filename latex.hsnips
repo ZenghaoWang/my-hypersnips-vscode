@@ -15,14 +15,7 @@ $0
 endsnippet
 
 snippet mk "Inline math mode" wA
-\($1\)``
-if (t[1] && [',', '.', '?', '-', ' '].includes(t[1].charAt(0))) {
-    rv = ''
-    }
-else {
-    rv = ' '
-    }
-``$2
+\($1\)$0
 endsnippet
 
 snippet dm "Display math" wA
@@ -121,4 +114,19 @@ snippet `^code` "Minted code block" A
 \begin{minted}{${1:python}}
 $0
 \end{minted}
+endsnippet
 
+snippet \\\ "Line break with vertical space" iA
+\\\[10pt]
+endsnippet
+
+snippet `^enu` "Begin ordered list env" A
+\begin{enumerate}
+    \item $0
+\end{enumerate}
+endsnippet
+
+snippet `^ite` "Begin Un-ordered list env" A
+\begin{itemize}
+    \item $0
+\end{itemize}
