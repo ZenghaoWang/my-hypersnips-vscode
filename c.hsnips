@@ -12,6 +12,7 @@ snippet `^func` "New function" A
 let param_arr = t[3].split(", ")
 param_arr = param_arr
     .map(x => x.split(" ")[1])
+    .map(x => x && x.replace(/\*/g, ""))
 rv = param_arr.map(x => "* @param " + x + "\n").join("")
 ``
 * @return       $4
