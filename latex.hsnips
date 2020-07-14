@@ -116,8 +116,9 @@ $0
 \end{minted}
 endsnippet
 
-snippet \\\ "Line break with vertical space" iA
-\\\[10pt]
+snippet `^(\s*)\\\\\\` "Line break with vertical space" A
+``rv=m[0]``\[10pt]
+$0
 endsnippet
 
 snippet `^enu` "Begin ordered list env" A
@@ -130,3 +131,26 @@ snippet `^ite` "Begin Un-ordered list env" A
 \begin{itemize}
     \item $0
 \end{itemize}
+endsnippet
+
+snippet funcm "function definition" wA
+${1:f}: ${2:\mathbb{R\}} \to ${3:\mathbb{R\}}
+endsnippet
+
+snippet fbf "Bold font" wA
+\textbf{$1} $0
+endsnippet
+
+snippet `^defi` "Definition environment" A
+\begin{definition}$1
+    $0
+\end{definition}
+endsnippet
+
+snippet fcal "mathcal" wA
+\mathcal{$1}$0
+endsnippet
+
+snippet fbb "mathbb" wA
+\mathbb{$1}$0
+endsnippet
