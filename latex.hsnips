@@ -20,9 +20,8 @@ endsnippet
 
 snippet dm "Display math" wA
 \[
-$1
-.\] 
 $0
+.\] 
 endsnippet
 
 snippet usepackage "/usepackage{}" 
@@ -68,6 +67,10 @@ snippet RP "Positive Reals" wA
 \mathbb{R}^{+}
 endsnippet
 
+snippet RNN "Non-Negative Reals" wA
+\mathbb{R}^{\geq 0}
+endsnippet
+
 snippet QQ "Rationals" wA
 \mathbb{Q}
 endsnippet
@@ -76,12 +79,21 @@ snippet QP "Positive Rationals" wA
 \mathbb{Q}^{+}
 endsnippet
 
+snippet QNN "Non-Negative Rationals" wA
+\mathbb{Q}^{\geq 0}
+endsnippet
+
 snippet ZZ "Integers" wA
 \mathbb{Z}
 endsnippet
 
 snippet ZP "Positive Integers" wA
 \mathbb{Z}^{+}
+endsnippet
+
+
+snippet ZNN "Non-Negative Integers" wA
+\mathbb{Z}^{\geq 0}
 endsnippet
 
 snippet NN "Naturals" wA
@@ -111,7 +123,7 @@ snippet `^theo` "Theorem environment" A
 endsnippet
 
 snippet `^code` "Minted code block" A
-\begin{minted}{${1:python}}
+\begin{minted}[linenos]{${1:python}}
 $0
 \end{minted}
 endsnippet
@@ -153,4 +165,12 @@ endsnippet
 
 snippet fbb "mathbb" wA
 \mathbb{$1}$0
+endsnippet
+
+snippet @| "size" wA
+|$1| $0
+endsnippet
+
+snippet OO "Big O" wA
+\mathcal{O}($1) $0
 endsnippet
