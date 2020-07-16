@@ -33,6 +33,10 @@ snippet td "superscript" iA
 ^{$1}$0
 endsnippet
 
+snippet rk "Subscript" iA
+_{$1}$0
+endsnippet
+
 snippet lra "leftangle rightangle" A
 \left < $1 \right >$0
 endsnippet
@@ -46,7 +50,7 @@ snippet floor "floor" w
 endsnippet
 
 
-snippet ooo "Infinity" wA
+snippet infty "Infinity" wA
 \infty
 endsnippet
 
@@ -57,7 +61,6 @@ endsnippet
 snippet nnn "bigcap" wA
 \bigcap_{${1:i \in ${2: I}}} $0
 endsnippet
-
 
 snippet RR "Reals" wA
 \mathbb{R}
@@ -104,7 +107,7 @@ snippet sbs "Subset equal" wA
 \subseteq 
 endsnippet
 
-snippet `^ali` "Align environment" A
+snippet `^(\s*) ali` "Align environment" A
 \begin{align*}
     $0
 \end{align*}
