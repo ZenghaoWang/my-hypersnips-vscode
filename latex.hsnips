@@ -29,11 +29,11 @@ snippet usepackage "/usepackage{}"
 $0
 endsnippet
 
-snippet wf "superscript" iA
+snippet td "superscript" iA
 ^{$1}$0
 endsnippet
 
-snippet rk "Subscript" iA
+snippet wf "Subscript" iA
 _{$1}$0
 endsnippet
 
