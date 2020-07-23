@@ -107,7 +107,7 @@ snippet sbs "Subset equal" wA
 \subseteq 
 endsnippet
 
-snippet `^(\s*) ali` "Align environment" A
+snippet `^(\s*)ali` "Align environment" A
 \begin{align*}
     $0
 \end{align*}
