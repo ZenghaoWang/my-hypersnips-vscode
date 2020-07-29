@@ -103,9 +103,14 @@ snippet NN "Naturals" wA
 \mathbb{N}
 endsnippet
 
-snippet sbs "Subset equal" wA
-\subseteq 
+snippet sbeq "Subset equal" wA
+\subseteq $0
 endsnippet
+
+snippet sbs "Subset" wA
+\subset $0
+endsnippet
+
 
 snippet `^(\s*)ali` "Align environment" A
 \begin{align*}
