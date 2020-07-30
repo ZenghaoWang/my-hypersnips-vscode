@@ -130,6 +130,12 @@ snippet `^theo` "Theorem environment" A
 \end{theorem}
 endsnippet
 
+snippet `^lem` "Lemma environment" A
+\begin{lemma}$1
+    $0
+\end{lemma}
+endsnippet
+
 snippet `^code` "Minted code block" A
 \begin{minted}[linenos]{${1:python}}
 $0
