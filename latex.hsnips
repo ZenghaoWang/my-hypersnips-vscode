@@ -118,6 +118,11 @@ snippet `^(\s*)ali` "Align environment" A
 \end{align*}
 endsnippet
 
+
+snippet `^newp` "Page break" A
+\newpage
+endsnippet
+
 snippet `^pro` "Proof environment" A
 \begin{proof}
     $0
