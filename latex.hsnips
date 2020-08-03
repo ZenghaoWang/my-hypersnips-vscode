@@ -193,3 +193,38 @@ endsnippet
 snippet OO "Big O" wA
 \mathcal{O}($1) $0
 endsnippet
+
+snippet ddx "d/dx" wA
+\frac{d$2}{d${1:x}$3} 
+endsnippet
+
+snippet `^template:beamer` "Beamer slides template" 
+\documentclass{beamer}
+\usetheme{Warsaw}
+
+\title{$1}
+\subtitle{$2}
+\author{${3:Zenghao Wang, 1005366097}}
+
+
+% Makes pause command work in align env
+\makeatletter
+\let\save@measuring@true\measuring@true
+\def\measuring@true{%
+  \save@measuring@true
+  \def\beamer@sortzero##1{\beamer@ifnextcharospec{\beamer@sortzeroread{##1}}{}}%
+  \def\beamer@sortzeroread##1<##2>{}%
+  \def\beamer@finalnospec{}%
+}
+\makeatother
+
+\begin{document}
+\begin{frame}
+      \titlepage
+\end{frame}
+
+\begin{frame}
+      \frametitle{$4}
+      $0
+\end{frame} 
+endsnippet
