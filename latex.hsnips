@@ -237,3 +237,12 @@ snippet `^template:beamer` "Beamer slides template"
       $0
 \end{frame} 
 endsnippet
+
+snippet `^fra` "Frame environment" A
+\begin{frame}
+    \frametitle{$1}
+    \begin{itemize}[<+->]
+        \item $0
+    \end{itemize}
+\end{frame} 
+endsnippet
