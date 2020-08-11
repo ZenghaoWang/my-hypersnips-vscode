@@ -1,0 +1,8 @@
+snippet template:buildscript "Build" 
+if make; then 
+    gdn -ex run --args $1
+    exit 0
+else 
+    exit 1
+fi
+endsnippet

@@ -25,3 +25,4 @@ endsnippet
 snippet `^def` "Macro" A
 #define $0
 endsnippet
+
